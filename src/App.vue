@@ -1,28 +1,75 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <p>Align Top</p>
+    <a-row type="flex" justify="center" align="top">
+      <a-col :span="4">
+        <p class="height-100">
+          col-4
+        </p>
+      </a-col>
+      <a-col :span="4">
+        <p class="height-50">
+          col-4
+        </p>
+      </a-col>
+      <a-col :span="4">
+        <p class="height-120">
+          col-4
+        </p>
+      </a-col>
+      <a-col :span="4">
+        <p class="height-80">
+          col-4
+        </p>
+      </a-col>
+    </a-row>
+
+    <p>Align Center</p>
+    <a-row type="flex" justify="space-around" align="middle">
+      <a-col :span="4">
+        <p class="height-100">
+          col-4
+        </p>
+      </a-col>
+      <a-col :span="4">
+        <p class="height-50">
+          col-4
+        </p>
+      </a-col>
+      <a-col :span="4">
+        <p class="height-120">
+          col-4
+        </p>
+      </a-col>
+      <a-col :span="4">
+        <p class="height-80">
+          col-4
+        </p>
+      </a-col>
+    </a-row>
+
+    <p>Align Bottom</p>
+    <a-row type="flex" justify="space-between" align="bottom">
+      <a-col :span="4">
+        <p class="height-100">
+          col-4
+        </p>
+      </a-col>
+      <a-col :span="4">
+        <p class="height-50">
+          col-4
+        </p>
+      </a-col>
+      <a-col :span="4">
+        <p class="height-120">
+          col-4
+        </p>
+      </a-col>
+      <a-col :span="4">
+        <p class="height-80">
+          col-4
+        </p>
+      </a-col>
+    </a-row>
   </div>
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
